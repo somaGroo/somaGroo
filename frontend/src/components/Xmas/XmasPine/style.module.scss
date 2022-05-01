@@ -1,0 +1,27 @@
+.xmas-pine {
+  margin-bottom: 30px;
+  &-branch {
+    animation: color 5s linear infinite;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 25px 20px;
+    border-color: transparent transparent #e43222 transparent;
+
+    &:first-child {
+      border-bottom-color: #285f41;
+      position: relative;
+    }
+
+    &:not(:first-child) {
+      margin-top: -10px;
+    }
+  }
+}
+
+@keyframes color {
+  40%,
+  50% {
+    border-bottom-color: #285f41;
+  }
+}

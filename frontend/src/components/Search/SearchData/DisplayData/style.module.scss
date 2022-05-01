@@ -1,0 +1,27 @@
+.searchedUserDataArticle{
+    margin: 5px 0px;
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.searchedUserDataArticle a:link {
+    color: green;
+    text-decoration-line: none;
+}
+
+.searchedUserDataArticle a:visited {
+    color: green;
+    text-decoration-line: none;
+}
+
+
+.searchedUserData {
+    width: 100px;
+    height: 140px;
+    font-size: 26px;
+    text-align: center;
+    display: inline;
+}

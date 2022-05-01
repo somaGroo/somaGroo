@@ -1,0 +1,17 @@
+@import "src/styles/color.scss";
+
+.layout {
+  overflow-y: auto;
+  height: 100vh;
+  background-color: $gray-200;
+
+  .body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: $white;
+  }
+}

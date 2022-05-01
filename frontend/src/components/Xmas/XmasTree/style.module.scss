@@ -1,0 +1,23 @@
+.xmas-tree {
+  margin-bottom: 20px;
+  &-branch {
+    animation: color 5s linear infinite;
+    width: 25px;
+    height: 25px;
+    border-right: 2px solid #285f41;
+    border-bottom: 2px solid #e43222;
+    margin: 5px;
+    transform: rotate(-135deg);
+
+    &:nth-child(even) {
+      margin-top: -10px;
+    }
+  }
+}
+
+@keyframes color {
+  40%,
+  50% {
+    border-bottom-color: #285f41;
+  }
+}

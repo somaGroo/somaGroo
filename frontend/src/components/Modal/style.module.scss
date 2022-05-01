@@ -1,0 +1,31 @@
+@import "src/styles/_color.scss";
+.card {
+  @media screen and (max-width: 375px) {
+    width: 100px;
+    height: 120px;
+    font-size: 9px;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 130px;
+  height: 142px;
+  padding: 10px;
+  border-radius: 13px;
+  background-color: $white;
+  text-align: center;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  font-size: 11px;
+  cursor: pointer;
+  transform: rotate(16deg) translateX(12px) translateY(12px);
+  &:nth-child(4n + 1) {
+    transform: rotate(-3deg) translateX(7px) translateY(7px);
+  }
+  &:nth-child(4n) {
+    transform: rotate(-3deg) translateX(7px) translateY(7px);
+  }
+  span {
+    display: inline-block;
+  }
+}

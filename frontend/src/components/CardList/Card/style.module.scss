@@ -1,0 +1,45 @@
+@import "src/styles/_color.scss";
+.wrapping {
+  .card {
+    transform: rotate(16deg) translateX(12px) translateY(12px);
+  }
+  &:nth-child(4n + 1) {
+    .card {
+      transform: rotate(-3deg) translateX(7px) translateY(7px);
+    }
+  }
+  &:nth-child(4n) {
+    .card {
+      transform: rotate(-3deg) translateX(7px) translateY(7px);
+    }
+  }
+  &:nth-last-child(2),
+  &:last-child {
+    .card {
+      transform: rotate(3deg) translateX(7px) translateY(7px);
+    }
+  }
+}
+.card {
+  @media screen and (max-width: 375px) {
+    width: 100px;
+    height: 120px;
+    font-size: 9px;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 130px;
+  height: 142px;
+  padding: 10px;
+  border-radius: 13px;
+  background-color: $white;
+  text-align: center;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  font-size: 11px;
+  cursor: pointer;
+  span {
+    display: inline-block;
+  }
+}

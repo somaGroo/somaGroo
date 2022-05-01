@@ -1,0 +1,116 @@
+.ground {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100%;
+}
+
+#App {
+  background-color: rgb(31, 28, 28);
+  //   margin: 0px auto;
+  //   width: 80%;
+  //   max-width: 414px;
+  //   height: 100vh;
+  //   padding: 16px 24px 0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.upperContainer {
+  //   display: flex;
+  //   padding: 0px 8px;
+  //   -webkit-box-pack: justify;
+  //   justify-content: space-between;
+  //   width: 80%;
+  //   -webkit-box-align: center;
+  //   align-items: center;
+  //   color: rgb(97, 96, 96);
+  font-size: 18px;
+  //   font-weight: bold;
+  height: 20px;
+  //   margin: 0px 0px 30px;
+  padding-top: 25px;
+}
+
+.receiver {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.fromContainer {
+  height: 35px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.col1 {
+  float: left;
+  height: 35px;
+  margin-right: 15px;
+  margin-left: 50px;
+  padding-top: 5px;
+  font-size: 20px;
+
+  //   display: table-cell;
+}
+.col2 {
+  float: left;
+  height: 35px;
+  width: 60%;
+  //   display: table-cell;
+  border: none;
+  resize: none;
+  font-size: 20px;
+}
+
+.formWrapper {
+  //   align-items: center;
+  //   background-color: rgb(245, 245, 245);
+  //   background-size: cover;
+  //   width: 80%;
+  //   margin: 0 auto;
+  height: 80%;
+}
+
+.titleInput {
+  //   width: 500px;
+  //   height: 40px;
+  //   margin: 10px;
+}
+
+.textArea {
+  width: 80%;
+  height: 50%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  border: 1px, gray;
+  resize: none;
+}
+
+.submitButton {
+  float: right;
+  vertical-align: right;
+  width: 50px;
+  height: 20px;
+  font-size: 10px;
+  //   padding: 10px;
+  border: none;
+  background: rgb(252, 184, 184);
+  border-radius: 5px;
+}
+
+.backButton {
+  width: 50px;
+  height: 20px;
+  font-size: 10px;
+  //   padding: 10px;
+  border: none;
+  background: rgb(252, 184, 184);
+  border-radius: 5px;
+}

@@ -1,0 +1,13 @@
+.cardList {
+  position: absolute;
+  display: grid;
+  grid-template-columns: calc(50%) calc(50%);
+  place-items: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  row-gap: 24px;
+  margin: auto;
+  padding: 20px 0;
+}
