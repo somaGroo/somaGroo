@@ -3,6 +3,7 @@ import Xmas from "../../components/Xmas";
 import PageLayout from "../../components/PageLayout";
 import CardList from "../../components/CardList";
 import { useNavigate, useParams } from "react-router-dom";
+import Loading from "../../components/Loading";
 import $ from "./style.module.scss";
 import API_URL from "../../api.js";
 
@@ -24,8 +25,9 @@ export default function TreePage() {
 
   return (
     <PageLayout>
-      {!isLoading && 
-        <>
+      <button className={$.backButton} onClick={() => navigate(-1)}>이전</button>
+      {!isLoading ?
+        (<>
           <header className={$.header}>
             <span>{cardListData.swm_id}번</span>
             <span>{cardListData.role === 'mentee' ? '연수생' : '멘토'}</span>
@@ -33,7 +35,7 @@ export default function TreePage() {
           </header>
           <Xmas />
           <CardList cardList={cardListData.papers} />
-        </>
+        </>) : (<Loading />)
       }
       <button className={$.write} type="button" onClick={writeLetter}>+</button>
     </PageLayout>

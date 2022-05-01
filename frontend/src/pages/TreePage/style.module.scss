@@ -1,6 +1,18 @@
+.backButton {
+  position: absolute;
+  z-index: 10;
+  width: 40px;
+  height: 30px;
+  margin: 10px 0 0 10px;
+  border-radius: 12px;
+  background-color: white;
+  font-size: 15px;
+}
+
 .header {
   position: absolute;
-  margin: 20px;
+  margin-top: 10px;
+  left: 27%;
   z-index: 10;
   span {
     margin: 5px;
